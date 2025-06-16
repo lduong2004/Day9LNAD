@@ -30,6 +30,12 @@
             android:layout_height="wrap_content"
             android:text="Search" />
     </LinearLayout>
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giỏ hàng"
+        android:layout_marginTop="16dp" />
 
     <!-- RecyclerView chiếm phần còn lại -->
     <androidx.recyclerview.widget.RecyclerView

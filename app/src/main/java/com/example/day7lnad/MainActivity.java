@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         reDemo = findViewById(R.id.reDemo);
         edtSearch = findViewById(R.id.edtSearch);
         btnSearch = findViewById(R.id.btnSearch);
+        Button btnAddToCart = findViewById(R.id.btnAddToCart);
 
         productApi = RetrofitClient.getProductApi();
 
@@ -97,6 +98,12 @@ public class MainActivity extends AppCompatActivity {
             }
 
             mProductAdapter.updateData(filteredList);
+        });
+
+        Button btnCart = findViewById(R.id.btnAddToCart);
+        btnCart.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, CartActivity.class);
+            startActivity(intent);
         });
     }
 }

@@ -16,6 +16,7 @@
         android:theme="@style/Theme.Day7LNAD"
         tools:targetApi="31">
         <activity android:name=".ProductDetailActivity" />
+        <activity android:name=".CartActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
